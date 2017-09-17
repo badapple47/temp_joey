@@ -42,17 +42,17 @@ class ViewController: UIViewController {
         
         
 
-        self.defaultManager.request("https://10.34.250.12/api/location/v2/clients/count", headers: headers).authenticate(user: user, password: password)
+        self.defaultManager.request("https://10.34.250.12/api/config/v1/maps/imagesource/domain_0_1500368087062.jpg", headers: headers).authenticate(user: user, password: password)
 
-            .responseString { response in
+            .responseImage { response in
                 
                 debugPrint(response)
-                debugPrint(response.result)
+//                debugPrint(response.result)
                 
-//                            if let image = response.result.value {
-//                                self.imageView.image = image
-//
-//                            }
+                            if let image = response.result.value {
+                                self.imageView.image = image
+
+                            }
                         }
     }
 
