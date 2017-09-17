@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90E731DC867ADB581B5B69CF /* Pods_temp_joey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4099EFA40AC5B0DD12E708A /* Pods_temp_joey.framework */; };
 		A8B3A9EF1F6993AC0000B7BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B3A9EE1F6993AC0000B7BF /* AppDelegate.swift */; };
 		A8B3A9F11F6993AC0000B7BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B3A9F01F6993AC0000B7BF /* ViewController.swift */; };
 		A8B3A9F41F6993AC0000B7BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B3A9F21F6993AC0000B7BF /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		156AEA607156BF30D2610C66 /* Pods-temp-joey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-temp-joey.release.xcconfig"; path = "Pods/Target Support Files/Pods-temp-joey/Pods-temp-joey.release.xcconfig"; sourceTree = "<group>"; };
+		43DB8407617E6E4B4D86A237 /* Pods-temp-joey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-temp-joey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-temp-joey/Pods-temp-joey.debug.xcconfig"; sourceTree = "<group>"; };
 		A8B3A9EB1F6993AC0000B7BF /* temp-joey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "temp-joey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8B3A9EE1F6993AC0000B7BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8B3A9F01F6993AC0000B7BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		A8B3A9F51F6993AC0000B7BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8B3A9F81F6993AC0000B7BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8B3A9FA1F6993AC0000B7BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4099EFA40AC5B0DD12E708A /* Pods_temp_joey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_temp_joey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90E731DC867ADB581B5B69CF /* Pods_temp_joey.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8FB49E035AED0288DA8F61E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43DB8407617E6E4B4D86A237 /* Pods-temp-joey.debug.xcconfig */,
+				156AEA607156BF30D2610C66 /* Pods-temp-joey.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A8B3A9E21F6993AC0000B7BF = {
 			isa = PBXGroup;
 			children = (
 				A8B3A9ED1F6993AC0000B7BF /* temp-joey */,
 				A8B3A9EC1F6993AC0000B7BF /* Products */,
+				8FB49E035AED0288DA8F61E3 /* Pods */,
+				D3BE0A0DA9F88AC2B077AE40 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = "temp-joey";
 			sourceTree = "<group>";
 		};
+		D3BE0A0DA9F88AC2B077AE40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4099EFA40AC5B0DD12E708A /* Pods_temp_joey.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8B3A9FD1F6993AC0000B7BF /* Build configuration list for PBXNativeTarget "temp-joey" */;
 			buildPhases = (
+				4F0852FDB4DCB7D21DC9235E /* [CP] Check Pods Manifest.lock */,
 				A8B3A9E71F6993AC0000B7BF /* Sources */,
 				A8B3A9E81F6993AC0000B7BF /* Frameworks */,
 				A8B3A9E91F6993AC0000B7BF /* Resources */,
+				6873A9DB41B2AE34FA3A88BC /* [CP] Embed Pods Frameworks */,
+				57DA33589B4399CB04C23E97 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F0852FDB4DCB7D21DC9235E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-temp-joey-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57DA33589B4399CB04C23E97 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-temp-joey/Pods-temp-joey-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6873A9DB41B2AE34FA3A88BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-temp-joey/Pods-temp-joey-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-temp-joey/Pods-temp-joey-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A8B3A9E71F6993AC0000B7BF /* Sources */ = {
@@ -260,6 +343,7 @@
 		};
 		A8B3A9FE1F6993AC0000B7BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43DB8407617E6E4B4D86A237 /* Pods-temp-joey.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "temp-joey/Info.plist";
@@ -272,6 +356,7 @@
 		};
 		A8B3A9FF1F6993AC0000B7BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 156AEA607156BF30D2610C66 /* Pods-temp-joey.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "temp-joey/Info.plist";
